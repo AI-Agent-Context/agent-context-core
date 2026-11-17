@@ -37,7 +37,7 @@
 - Existing authorization to execute an agreed plan is sufficient for its included steps; do not request repetitive confirmation for each step. Honor explicit review checkpoints, and return scope changes to the user for a new decision.
 - If the user stops or cancels the work, immediately stop active execution, including worker tasks.
 - The final report is delivered directly in the session chat and states the changes plus any errors or blockers that prevented requested completion, backed by evidence delivered by the worker. Do not create an unsolicited report file.
-- This workflow applies to every project and session where this shared context is loaded. The user supplies or loads this shared file at the start of each session; it does not guarantee automatic loading.
+- This workflow applies to every project and session. Install this shared file through the Core package into the selected agent's user-level instruction file so the agent loads it automatically at session start. Automatic loading depends on selecting a supported agent target.
 
 ### Session Worker Configuration
 
@@ -150,7 +150,7 @@ Use the actual project remote and branch. Do not commit or push without explicit
 
 **For AI Agent:**
 
-1. Read this `GLOBAL_WORKING_CONTEXT.md` first for universal behavior, identity, and communication.
+1. Follow these global rules at the start of every session. When the host has not auto-loaded them, read `GLOBAL_WORKING_CONTEXT.md` before acting.
 2. Read the domain-specific context and skills when applicable:
    - `CODING_CONTEXT.md` for software engineering projects.
    - `RESEARCH_CONTEXT.md` for academic and paper research projects.
@@ -163,7 +163,7 @@ Use the actual project remote and branch. Do not commit or push without explicit
 
 **For User:**
 
-1. Supply or load this shared file at the start of a new project or session.
+1. Install Core for your agent with `npx @ai-agent-context/agent-context-core --agent <agent>` so these rules load in every new session. The default agent is Codex.
 2. Supply the relevant domain context or workflow when specialized standards are required. For grading, provide the applicable grading workflow/skills and course-specific materials required by them.
 3. Supply the relevant project context file(s).
 4. Begin working.

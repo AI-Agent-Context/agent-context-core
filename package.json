@@ -1,7 +1,7 @@
 {
   "name": "@ai-agent-context/agent-context-core",
-  "version": "0.1.0",
-  "description": "Install the universal AI working context into the current project.",
+  "version": "0.2.0",
+  "description": "Install the universal AI working context as always-on user instructions.",
   "type": "module",
   "bin": {
     "agent-context-core": "./bin/install.mjs"
@@ -22,6 +22,7 @@
     "access": "public"
   },
   "exports": {
-    "./GLOBAL_WORKING_CONTEXT.md": "./GLOBAL_WORKING_CONTEXT.md"
+    "./GLOBAL_WORKING_CONTEXT.md": "./GLOBAL_WORKING_CONTEXT.md",
+    "./installer": "./bin/install.mjs"
   }
 }
