@@ -1,24 +1,27 @@
 {
-    "name":  "@ai-agent-context/agent-context-core",
-    "version":  "0.1.0",
-    "description":  "Install the universal AI working context into the current project.",
-    "type":  "module",
-    "bin":  {
-                "agent-context-core":  "./bin/install.mjs"
-            },
-    "files":  [
-                  "bin",
-                  "GLOBAL_WORKING_CONTEXT.md",
-                  "README.md"
-              ],
-    "engines":  {
-                    "node":  "^18.17.0 || \u003e=20.5.0"
-                },
-    "repository":  {
-                       "type":  "git",
-                       "url":  "https://github.com/AI-Agent-Context/agent-context-core.git"
-                   },
-    "publishConfig":  {
-                          "access":  "public"
-                      }
+  "name": "@ai-agent-context/agent-context-core",
+  "version": "0.1.0",
+  "description": "Install the universal AI working context into the current project.",
+  "type": "module",
+  "bin": {
+    "agent-context-core": "./bin/install.mjs"
+  },
+  "files": [
+    "bin",
+    "GLOBAL_WORKING_CONTEXT.md",
+    "README.md"
+  ],
+  "engines": {
+    "node": "^18.17.0 || >=20.5.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AI-Agent-Context/agent-context-core.git"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "exports": {
+    "./GLOBAL_WORKING_CONTEXT.md": "./GLOBAL_WORKING_CONTEXT.md"
+  }
 }
